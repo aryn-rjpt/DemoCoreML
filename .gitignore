@@ -1,0 +1,72 @@
+# ---------- macOS ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ---------- Xcode: build output ----------
+build/
+DerivedData/
+.derivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ---------- Xcode: per-user state ----------
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# ---------- Xcode: misc ----------
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+timeline.xctimeline
+playground.xcworkspace
+
+# Keep shared schemes and workspace settings (do NOT ignore xcshareddata)
+# !*.xcodeproj/xcshareddata/xcschemes/
+
+# ---------- Swift Package Manager ----------
+.build/
+.swiftpm/
+# Commit Package.resolved for apps; uncomment to ignore it for libraries
+# Package.resolved
+
+# ---------- CocoaPods ----------
+# Many teams commit Pods/ for reproducible builds; ignore it if you prefer
+Pods/
+# Podfile.lock should be committed
+
+# ---------- Carthage ----------
+Carthage/Build/
+Carthage/Checkouts/
+
+# ---------- fastlane ----------
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/README.md
+
+# ---------- Secrets and local config ----------
+*.p12
+*.mobileprovision
+*.cer
+.env
+Secrets.xcconfig
+GoogleService-Info.plist
+
+# ---------- Editors / misc ----------
+.idea/
+.vscode/
+*.swp
+*~

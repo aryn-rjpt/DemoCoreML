@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+internal import UniformTypeIdentifiers
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            Tab("What?", systemImage: "photo.circle") {
+                ImageClassifierView()
+            }
+            Tab("How much?", systemImage: "dot.scope") {
+                FindDepthView()
+            }
         }
-        .padding()
     }
 }
 
